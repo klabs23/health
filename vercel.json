@@ -1,0 +1,1 @@
+{"buildCommand":"npm run build","outputDirectory":"public","functions":{"api/index.js":{"includeFiles":"{index.html,app.js,health.js,style.css,dist/**}"}},"rewrites":[{"source":"/(.*)","destination":"/api/index"}]}

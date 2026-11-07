@@ -1,1 +1,20 @@
-{"name":"vital-health","version":"1.0.0","private":true,"scripts":{"dev":"node server.js","start":"node server.js","test":"node --test"}}
+{
+  "name": "vital-health",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node --test",
+    "build": "esbuild auth.js --bundle --minify --outfile=dist/auth.js --platform=browser",
+    "prestart": "npm run build",
+    "predev": "npm run build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "esbuild": "^0.28.2"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
